@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.786);
+    color: white;
+    height: 100vh;
+
+}
+.card-content{
+    display: flex;
+}
+.card{
+    width: 300px;
+}
+.card h3{
+    display: inline-block;
+    height: 50px;
+    margin: 5px auto;
+}
+
+.card p{
+    margin: 20px 0;
+}
