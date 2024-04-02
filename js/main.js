@@ -1,4 +1,7 @@
 const cardContent = document.getElementById("cardContent");
+const verBag = document.getElementById("verBag");
+const modalContenedor = document.getElementById("modalContenedor")
+
 
 const releases = [
 {
@@ -47,5 +50,17 @@ releases.forEach((release) => {
 
     info.append(buy);
 
+    buy.addEventListener("click", () => {
 
-})
+        carrito.push({
+            id : release.id,
+            img: release.img,
+            name: release.name,
+            price: release.price,
+
+        });
+        console.log(carrito)
+    })
+
+});
+

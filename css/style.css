@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header{
+.contenedor{
     background-color: rgba(0, 0, 0, 0.786);
     color: white;
     height: 100vh;
@@ -12,16 +12,31 @@ header{
 }
 .card-content{
     display: flex;
+    padding: 50px;
+    gap: 10px;
 }
 .card{
     width: 300px;
+    background-color: rgba(0, 0, 0, 0.786);
+    color: white;
+    
 }
 .card h3{
     display: inline-block;
     height: 50px;
-    margin: 5px auto;
+    margin: 5px;
 }
 
 .card p{
-    margin: 20px 0;
+    margin: 15px 0;
+}
+
+button{
+    background-color: rgb(1, 255, 149);
+    padding: 5px;
+
+}
+
+.delete-product{
+    cursor: pointer;
 }
