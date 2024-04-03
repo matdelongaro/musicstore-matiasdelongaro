@@ -71,10 +71,16 @@ button{
     font-size: 18px;
 
 }
+.modal-content p{
+    font-size: 18px;
+
+}
 .modal-contenedor img{
     width: 100px;
     
 }
+
+
 .total-content{
     background-color: #000;
     font-size: 30px;
@@ -116,6 +122,11 @@ button{
     .modal-contenedor img{
         width: 70px;
         
+    }
+    .modal-content p{
+        font-size: 10px;
+        margin: auto;
+    
     }
     .total-content{
         background-color: #000;
