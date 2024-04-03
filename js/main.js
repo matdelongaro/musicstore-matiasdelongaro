@@ -32,7 +32,7 @@ const releases = [
 
 ];
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 releases.forEach((release) => {
     let info = document.createElement("div");
@@ -60,7 +60,13 @@ releases.forEach((release) => {
 
         });
         console.log(carrito)
+        saveLocal();
     })
 
 });
+
+
+const saveLocal = () => {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+};
 
