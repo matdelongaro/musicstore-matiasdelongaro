@@ -41,7 +41,7 @@ const llamarBag = () => {
     const total = carrito.reduce((acc, el) => acc + el.price, 0);
     const totales = document.createElement("div")
     totales.className = "total-content"
-    totales.innerHTML= `Total a pagar: ${total} $`;
+    totales.innerHTML= `Total a pagar: ${total.toFixed(2)} $`;
     modalContenedor.append(totales);
 };
 
