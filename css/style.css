@@ -7,7 +7,7 @@
 .contenedor{
     background-color: rgba(0, 0, 0, 0.786);
     color: white;
-    height: 100vh;
+
 
 }
 .card-content{
@@ -36,7 +36,74 @@ button{
     padding: 5px;
 
 }
+.modal-contenedor{
+    position: absolute;
+    background-color: #000;
+    color: white;
+    width: 600px;
+    height: auto;
+    top:10%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+
+}
+.header-modal-title{
+    font-size: 35px;
+}
+.header-modal{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(1, 255, 149);
+    color: #000;
+}
+.modal-content{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.modal-content h3{
+    font-size: 18px;
+
+}
+.modal-contenedor img{
+    width: 100px;
+    
+}
+.total-content{
+    background-color: #000;
+    font-size: 30px;
+    margin: 0;
+
+}
+
+
+
 
 .delete-release{
     cursor: pointer;
+}
+
+#burger{
+    color: white;
+}
+
+@media (max-width: 768px){
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .modal-contenedor{
+        top:20%;
+        left: 0;
+        width: 500px;
+    }
+
 }
