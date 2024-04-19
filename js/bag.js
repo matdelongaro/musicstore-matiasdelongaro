@@ -33,7 +33,28 @@ const llamarBag = () => {
     eliminar.className = "delete-release";
     bagContent.append(eliminar);
 
-    eliminar.addEventListener("click", eliminarRelease)
+    eliminar.addEventListener("click", () => {
+        Swal.fire({
+            title: "Está seguro que quiere eliminar el item?",
+            icon : 'warning',
+            showCancelButton : true,
+            confirmButtonText: "si, seguro",
+            cancelButtonText: "No, no quiero"
+        }).then((result) => {
+            if(result.isConfirmed){
+                Swal.fire({
+                    title:'Borrado',
+                    icon:'success',
+                    text:'El archivo ha sido borrado'
+                
+                })
+                
+            }
+            
+        })
+        
+    })
+    eliminar.addEventListener("click", eliminarRelease);
     });
 
 
