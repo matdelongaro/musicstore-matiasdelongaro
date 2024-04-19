@@ -59,7 +59,6 @@ releases.forEach((release) => {
             price: release.price,
 
         });
-        console.log(carrito)
         saveLocal();
     })
 
