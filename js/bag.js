@@ -1,6 +1,8 @@
 const llamarBag = () => {
     modalContenedor.innerHTML = '';
-    modalContenedor.style.display = "block";
+    modalContenedor.style.display = "flex";
+    containerTotal.style.display = "block";
+    
     const headerModal = document.createElement("div");
     headerModal.className = "header-modal"
     headerModal.innerHTML = `
@@ -13,6 +15,7 @@ const llamarBag = () => {
 
     modalButton.addEventListener('click', () => {
         modalContenedor.style.display = "none";
+        containerTotal.style.display = "none";
     });
 
 
@@ -25,39 +28,19 @@ const llamarBag = () => {
     <img src="${release.img}">
     <h3>${release.name}</h3>
     <p>${release.price} $</p>
+    <span class="delete-release"> ❌ </span>
     `;
 
     modalContenedor.append(bagContent);
-    let eliminar = document.createElement("span");
-    eliminar.innerText = "❌";
-    eliminar.className = "delete-release";
-    bagContent.append(eliminar);
+    let eliminar = bagContent.querySelector(".delete-release");
 
     eliminar.addEventListener("click", () => {
-        Swal.fire({
-            title: "Está seguro que quiere eliminar el item?",
-            icon : 'warning',
-            showCancelButton : true,
-            confirmButtonText: "si, seguro",
-            cancelButtonText: "No, no quiero"
-        }).then((result) => {
-            if(result.isConfirmed){
-                Swal.fire({
-                    title:'Borrado',
-                    icon:'success',
-                    text:'El archivo ha sido borrado'
-                
-                })
-                
-            }
-            
-        })
-        
-    })
-    eliminar.addEventListener("click", eliminarRelease);
+        eliminarRelease(release.id);
+    
     });
 
-
+    
+    });
 
     const total = carrito.reduce((acc, el) => acc + el.price, 0);
     const totales = document.createElement("div")
@@ -68,12 +51,20 @@ const llamarBag = () => {
 
 verBag.addEventListener("click", llamarBag);
 
-const eliminarRelease = () => {
-    const foundId = carrito.find((element) => element.id);
+const eliminarRelease = (id) => {
+    const foundId = carrito.find((element) => element.id === id);
 
     carrito = carrito.filter((carritoId) => {
         return carritoId != foundId;
     });
+    Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Temptation removed from Cart.",
+        showConfirmButton: false,
+        timer: 1500
+      });
     saveLocal();
     llamarBag();
 };
+

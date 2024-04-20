@@ -7,6 +7,8 @@ const modalContenedor = document.getElementById("modalContenedor")
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+
+
 const getReleases = async() => {
     const response = await fetch("data.json");
     const data = await response .json();
@@ -36,6 +38,12 @@ const getReleases = async() => {
                 price: release.price,
     
             });
+            Swal.fire({
+                icon: 'success',
+                title: '¡Producto agregado al carrito!',
+                showConfirmButton: false,
+                timer: 1500 
+              });
             saveLocal();
         })
     
