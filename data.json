@@ -23,6 +23,17 @@
             "name": "Seducing the Dancefloor, Vol. 13",
             "price": 16.99,
             "img":"https://geo-media.beatport.com/image_size/1400x1400/88c8ec49-1418-4161-b1be-464b784f2571.jpg"
-    }
-    
+    },
+    {
+        "id": 5,
+        "name": "Deep Aurora #05",
+        "price": 17.43,
+        "img": "https://geo-media.beatport.com/image_size/1400x1400/898dfc2b-4f2b-4c21-8795-87e8c52cc7ab.jpg"
+},
+{
+        "id": 6,
+        "name": "AH Digital 9 Years,Pt2",
+        "price": 16.99,
+        "img": "https://geo-media.beatport.com/image_size/1400x1400/b26f8b54-74fe-46d5-b1c7-ada86869a9ed.jpg"
+} 
 ]

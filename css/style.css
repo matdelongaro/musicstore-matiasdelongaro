@@ -4,37 +4,181 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+.logo{
+    width: 1.5em;
+    margin-right: 1em ;
+}
+
+
+
 .contenedor{
-    background-color: rgba(0, 0, 0, 0.786);
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color:rgb(56, 56, 59);;
 
 
 }
+
+.ver-bag{
+    cursor: pointer;
+}
+.cart{
+    color: #fff;
+}
+
+.up-header{
+    width: 100%;
+    background-color: #262626;
+}
+header{
+    height: 40vh;
+    background-color: #262626;
+    display: flex;
+}
+.vertical-nav{
+    background-color: rgb(56, 56, 59);
+    margin-top: 2em;
+
+    
+    
+}
+.vertical-nav li{
+    
+    color: rgb(255, 255, 255);
+    list-style: none;
+    padding: 10px;
+    
+    
+}
+.vertical-nav ul li{
+    padding: 1em;
+    gap: 2em;
+    margin-left: 1em;
+}
+.vertical-nav ul svg{
+
+   
+    margin-right: 1em;
+}
+
+
+.download{
+    color:#5cacec ;
+}
+.principal{
+    width: 80%;
+    display: flex;
+    margin-top: 2em;
+    margin-left: 2em;
+    gap: 2em;
+}
+.artist-name{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #fff;
+}
+.artist-info{
+    width: 60%;
+    font-size: 0.9em;
+    color: #fff;
+    padding: 1em;
+    text-align: justify;
+}
+.principal img{
+    width: 10em;
+
+}
+
+
+section{
+    text-align: center;
+    background-color: rgb(56, 56, 59);
+}
+
 .card-content{
     display: flex;
     padding: 50px;
     gap: 10px;
 }
 .card{
-    width: 300px;
-    background-color: rgba(0, 0, 0, 0.786);
-    color: white;
+    width: 10em;
+    color: rgb(255, 255, 255);
+    background-color:#262626;
+    border: none;
+    overflow: hidden;
     
+    
+}
+.card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.03);
+    transition: 0.2s;
+
 }
 .card h3{
     display: inline-block;
-    height: 50px;
-    margin: 5px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 5px;
+    text-align: center;
 }
 
 .card p{
+    font-size: 17px;
+    font-weight: 600 ;
+    color: #5cacec ;
     margin: 15px 0;
+    text-align: center;
 }
 
 button{
-    background-color: rgb(1, 255, 149);
-    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(56, 56, 59);
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+button:hover{
+    background-color: #5cacec ;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    
+}
 
+.pre-footer{
+    background-color: rgb(33, 37, 41);
+}
+
+.brand{
+    height: 4em;
+    background-color: rgb(33, 37, 41);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.brand img{
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
+.copy{
+    color: rgb(140, 140, 140);
+    margin: 0;
+    padding-bottom: 1em;
+
+}
+
+footer{
+    background-color: rgb(56, 56, 59);
 }
 
 
@@ -69,7 +213,7 @@ button{
 .header-modal{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(1, 255, 149);
+    background-color: #5cacec ;
     color: #000;
     width: 100%;
 }
@@ -119,12 +263,39 @@ button{
     color: white;
 }
 
-@media (max-width: 768px){
+
+
+@media (max-width: 1000px){
+    header{
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+    .principal{
+        gap: 1em;
+        
+    }
+    .artist-info{
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+    }
+    .vertical-nav{
+        text-align: center;
+       
+    }
+
+    
+    
+    
     .card-content{
         display: flex;
         flex-direction: column;
         align-items: center;
         
+    }
+    .card{
+        width: 80%;
+        margin: 1em auto;
     }
     .header-modal-title{
         font-size: 25px;

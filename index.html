@@ -10,14 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <script src="./js/bag.js" defer></script>
     <script src="./js/main.js" defer></script>
+    <script src="./js/form.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    
    
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg bg-black">
+    <nav class="navbar navbar-expand-lg bg-black" id="nav">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">Music Store</a>
+          <a class="navbar-brand text-white" href="#"><img src="./img/favicon_io/android-chrome-192x192.png" alt="" class="logo">Music Store</a>
           <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -33,20 +35,81 @@
               
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <h1 class="ver-bag" id="verBag">🛒</h1>
+              
+              <h1 class="ver-bag" id="verBag"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"  class="cart"/>
+              </svg></h1>
             </form>
           </div>
         </div>
       </nav>
+      
+      <header>
+        <div class="vertical-nav">
+          <ul>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+            </svg>Favorites</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z"/>
+              <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z"/>
+              <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z"/>
+            </svg>Collection</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+            </svg>Downloads</li>
+          </ul>
+        </div>
+        <div class="principal">
+          <div class="new">
+            <a href="#" class="artist-name">Matías Delóngaro</a>
+            <img src="./img/_MG_6100-Editar.jpg" alt="">
+          </div>
+          <div class="new-info">
+            
+            <p class="artist-info"> Matías was born in Mendoza, Argentina. The 32 years old boy, has began with the production of electronic music and Dj in 2017. He was always characterized by the breadth of genres, and over the years he acquired and created his own sound with influences from Progressive House, Deep House, Organic House and more. Growing little by little and creating his style, always with the characteristic of merging different genres.</p>
+           
+           
+          </div>
+          
+          
+        </div>
+      
+      </header>
       <div class="contenedor">
+        <h2 class="container text-center pt-5">Latest Releases</h2>
         <div id="cardContent" class="card-content container"></div>
       </div>
       <div class="container-total" id="containerTotal">
         <div id="modalContenedor" class="modal-contenedor"></div>
       </div>
+      <div class="contenedor-form">
+        <form id="form">
+          <label>Text
+            <input type="text" id="text-form">
+          </label>
+          <label for="">mail
+            <input type="mail" id="mail">
+          </label>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <section class="pre-footer">
+        <div  class="brand">
+          <img src="./img/favicon_io/android-chrome-192x192.png" alt="">
+          <h2>Music Store</h2>
+        </div>
+        
+        <p class="copy">© 2004-2024 Music Store, LLC</p>
+      </section>
       
-      <footer class="bg-black py-4">
+      <div>
+        <img src="./img/1_5.png" alt=""  class="up-header">
+      </div>
+
+      
+      <footer class="py-2">
         <div class="row mx-0 align-items-center">
           <div class="col-md-6 text-center my-2"><a href="https://www.instagram.com/matiasdelongaro/" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" class="text-bg-dark"/>
@@ -56,7 +119,10 @@
             <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" class="text-bg-dark"/>
           </svg></a></div>
         </div>
+        
       </footer>
+    
+     
     
   </body>
 </html>

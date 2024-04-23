@@ -68,3 +68,4 @@ const eliminarRelease = (id) => {
     llamarBag();
 };
 
+

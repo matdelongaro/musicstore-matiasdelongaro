@@ -3,8 +3,6 @@ const verBag = document.getElementById("verBag");
 const modalContenedor = document.getElementById("modalContenedor")
 
 
-
-
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 
@@ -24,7 +22,7 @@ const getReleases = async() => {
         cardContent.append(info);
     
         let buy = document.createElement("button");
-        buy.innerText = "Buy";
+        buy.innerText = "Add to cart";
         buy.className
     
         info.append(buy);
