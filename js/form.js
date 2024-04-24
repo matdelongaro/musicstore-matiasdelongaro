@@ -1,9 +1,16 @@
+let send = document.createElement("button");
+let form = document.querySelector(".formulario")
+send.innerText = "Enviar";
+send.className
 
-let send = document.getElementById("sendMessage")
+form.append(send)
+
+
+
 
   send.addEventListener("click", (send) => {
     const formulario = document.querySelector(".formulario");
-    const formularioSend = document.querySelector(".formulario-enviado")
+    const formularioSend = document.querySelector(".formulario-enviado");
     formulario.style.display = "none";
     formularioSend.style.display = "block";
     send.preventDefault()
@@ -11,7 +18,7 @@ let send = document.getElementById("sendMessage")
     Swal.fire({
         position: "top-center",
         icon: "success",
-        title: "Your work has been saved",
+        title: "Your request was sent successfully",
         showConfirmButton: false,
         timer: 1500
       });
