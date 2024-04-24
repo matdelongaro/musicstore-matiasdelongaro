@@ -6,7 +6,7 @@ const llamarBag = () => {
     const headerModal = document.createElement("div");
     headerModal.className = "header-modal"
     headerModal.innerHTML = `
-    <h1 class="header-modal-title">Bag.</h1>
+    <h1 class="header-modal-title">Cart</h1>
     `;
     modalContenedor.append(headerModal);
     const modalButton = document.createElement("h1");
@@ -60,7 +60,7 @@ const eliminarRelease = (id) => {
     Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Temptation removed from Cart.",
+        title: "Item removed from Cart.",
         showConfirmButton: false,
         timer: 1500
       });
