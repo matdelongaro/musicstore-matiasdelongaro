@@ -60,7 +60,7 @@ const eliminarRelease = (id) => {
     Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Item removed from Cart.",
+        title: "Removed from cart",
         showConfirmButton: false,
         timer: 1500
       });

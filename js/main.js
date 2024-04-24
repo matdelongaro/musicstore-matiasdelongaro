@@ -38,7 +38,7 @@ const getReleases = async() => {
             });
             Swal.fire({
                 icon: 'success',
-                title: '¡Producto agregado al carrito!',
+                title: '¡Added to cart!',
                 showConfirmButton: false,
                 timer: 1500 
               });
