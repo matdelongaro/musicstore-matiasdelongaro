@@ -185,7 +185,7 @@ footer{
 .header-modal{
     display: flex;
     justify-content: space-around;
-    background-color: #5cacec ;
+    background-color: rgb(140, 140, 140) ;
     color: #000;
     width: 100%;
 }
@@ -255,7 +255,8 @@ footer{
     .artist-info{
         display: block;
         width: 100%;
-        margin-top: 1em;
+        margin-top: 0.5em;
+        padding: 0.5em;
     }
     .vertical-nav{
         text-align: center;
@@ -318,21 +319,7 @@ footer{
     }
     .principal img{
         width: 100%;
+        margin: 1em auto;
     }
-    .vertical-nav{
-        text-align: center;
-    }
-    .vertical-nav ul{
-        padding-left: 0;
-    }
-    .vertical-nav ul li{
-        padding: 1em;
-        gap: 2em;
-        margin-left: 0;
-    }
-    .vertical-nav ul svg{
-    
-       
-        margin-right: 1em;
-    }
+
 }
