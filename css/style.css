@@ -145,9 +145,10 @@ button {
     padding: 10px;
 }
 button:hover{
-    background-color: #5cacec ;
+    background-color: rgb(56, 56, 59) ;
     color: rgb(255, 255, 255);
     transition: 0.3s;
+    border: solid rgb(255, 255, 255) 1px;
     
 }
 
