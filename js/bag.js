@@ -28,7 +28,7 @@ const llamarBag = () => {
     <img src="${release.img}">
     <h3>${release.name}</h3>
     <p>${release.price} $</p>
-    <span class="delete-release"> x </span>
+    <span class="delete-release"> X </span>
     `;
 
     modalContenedor.append(bagContent);
