@@ -1,6 +1,6 @@
 let send = document.createElement("button");
 let form = document.querySelector(".formulario")
-send.innerText = "Enviar";
+send.innerText = "Submit";
 send.className
 
 form.append(send)

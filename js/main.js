@@ -15,7 +15,7 @@ const getReleases = async() => {
         let info = document.createElement("div");
         info.className = "card";
         info.innerHTML = `
-        <img src="${release.img}">
+        <img src="${release.img}" alt"${release.name}">
         <h3>${release.name}</h3>
         <p class="price">${release.price} $</p>
         `;
